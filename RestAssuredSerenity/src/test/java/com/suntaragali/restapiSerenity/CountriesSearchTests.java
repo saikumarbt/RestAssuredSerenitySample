@@ -6,7 +6,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import com.suntaragali.steps.CountriesSearchSteps;
 
-
 @RunWith(SerenityRunner.class)
 public class CountriesSearchTests 
 {

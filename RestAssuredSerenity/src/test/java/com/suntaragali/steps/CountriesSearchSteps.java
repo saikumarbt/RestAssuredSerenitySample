@@ -14,7 +14,8 @@ public class CountriesSearchSteps {
 	@Step("I try to search the country by {0} code")
 	public void searchCountryByCode(String code) {
 		response = SerenityRest.given().header("X-RapidAPI-Host", "restcountries-v1.p.rapidapi.com").
-				header("X-RapidAPI-Key", "b637bb27ddmsh1fcb0d2fe729508p1f063ajsn2a38c56d6056").param("codes", code).when().get(CODE_SEARCH);
+				header("X-RapidAPI-Key", "b637bb27ddmsh1fcb0d2fe729508p1f063ajsn2a38c56d6056").
+				param("codes", code).when().get(CODE_SEARCH);
 	}
 	
 	@Step("I try to validate the Status code")
